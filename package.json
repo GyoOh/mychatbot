@@ -12,7 +12,7 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"npm run backend\"  \"npm run start --prefix client\""
   },
   "author": "Ryan Oh",
   "license": "ISC",
